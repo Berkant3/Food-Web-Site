@@ -1,96 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Web Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/food-logo.png" type="image/x-icon"/>
     <!--------bsicon----------->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <div class="logo">
-                <img src="images/food-logo.png" alt="">
-                <a href="">CHEF</a>
+      <header>
+        <div class="logo">
+          <img src="images/food-logo.png" alt="" />
+          <a href="">CHEF</a>
+        </div>
+        <div class="right">
+          <div class="search_form">
+            <div class="search_form">
+              <form>
+                <input
+                  type="text"
+                  placeholder="Aramak istediginiz yiyecegi giriniz..."
+                />
+                <button class="bi bi-search"><span>Ara</span></button>
+              </form>
             </div>
-            <div class="right">
-                <div class="search_form">
-                    <div class="search_form">
-                        <form>
-                            <input type="text" placeholder="Aramak istediginiz yiyecegi giriniz...">
-                            <button class="bi bi-search"><span>Ara</span></button>
-                            
-                        </form>
-                    </div>
-                </div>
-                <div class="likes">
-                    <i class="bi bi-bookmark-heart"></i>
-                    <div class="list">
-                        <a href="">
+          </div>
+          <div class="likes">
+            <i class="bi bi-bookmark-heart"></i>
+            <div class="list">
+              <!-- <a href="">
                             <img src="images/food.jpg" alt="">
                             <p>Best Pizza Dough Ever</p>
-                        </a>
-                    </div>
-                </div>
+                        </a> -->
             </div>
-        </header>
-        <!---main area-->
+          </div>
+        </div>
+      </header>
+      <!---main area-->
 
-        <main>
-            <section class="results">
-                         <a href="" class="result-link">
+      <main>
+        <section class="results">
+          <!-- <div class="loader">
+                    <img src="images/foodGif.gif" alt="">
+                </div> -->
+          <!-- <a href="" class="result-link">
                             <img src="images/food.jpg" alt="">
                             <div class="data">
                                 <h4>Best Pizza Dough Ever</h4>
                                 <p>101 Cookbooks</p>
                             </div>
-                         </a>
-            </section>
-            <section class="receipe">
-                <figure>
-                    <img src="images/food.jpg" alt="">
-                    <h1>Deep Dish Fruit Pizza</h1>
-                    <p class="like-area">
-                        <i class="bi bi-heart" id="like-btn"></i>
-                    </p>
-                </figure>
-                <div class="ingredients">
-                    <ul>
-                        <li>
-                            <i class="bi bi-check-circle"></i>
-                            <p>1-1/3 cup Shortening (may Substitute Butter)</p>
-                        </li>
-                    </ul>
-                    <button id="add-to-basket">
-                        <i class="bi bi-cart-fill"></i>
-                        <span>Alışveriş Sepetine Ekle</span>
-                    </button>
-                </div>
-                <div class="directions">
-                    <h2>Nasıl Pişirilir</h2>
-                    <p>Bu taraf dikkatlice <span>The Pioneer Woman</span> tarafından hazırlanmış ve
-                        test edilmiştir. Diğer detaylara onların websitesi üzerinden erişebilirsiniz.
-                    </p>
-                    <a href="" target="_blank">Yönerge</a>
-                </div>
-            </section>
-            <section class="shopping" >
-                <h2>Sepet</h2>
-                <div class="button-area">
-                    <button id="clear">
-                        <i class="bi bi-trash-fill"></i><span>Sepeti Temizle</span>
-                    </button>
-                </div>
-                <ul>
-                    <li>
-                        <i class="bi bi-x" id="delete-item"></i>
-                        <span>Semolina flour OR cornmeal for dusting</span>
-                    </li>
-                </ul>
-            </section>
-        </main>
+                         </a> -->
+        </section>
+        <section class="recipe">
+          <div class="directions">
+            <h2>Nasıl Pişirilir</h2>
+            <p>
+              Bu taraf dikkatlice <span>The Pioneer Woman</span> tarafından
+              hazırlanmış ve test edilmiştir. Diğer detaylara onların websitesi
+              üzerinden erişebilirsiniz.
+            </p>
+            <a href="" target="_blank">Yönerge</a>
+          </div>
+        </section>
+        <section class="shopping">
+          <h2>Sepet</h2>
+          <div class="button-area">
+            <button id="clear">
+              <i class="bi bi-trash-fill"></i><span>Sepeti Temizle</span>
+            </button>
+          </div>
+          <ul>
+          </ul>
+        </section>
+      </main>
     </div>
-</body>
+
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

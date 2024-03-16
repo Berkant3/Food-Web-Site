@@ -306,14 +306,14 @@ main .results .result-link .data p {
   font-family: "Pacifico", cursive;
   white-space: nowrap;
 }
-main .receipe {
+main .recipe {
   background-color: rgba(190, 190, 190, 0.5);
 }
-main .receipe figure {
+main .recipe figure {
   height: 300px;
   position: relative;
 }
-main .receipe figure::before {
+main .recipe figure::before {
   content: "";
   display: block;
   background-image: linear-gradient(90deg, #fab604 0%, #c28b00 100%);
@@ -324,13 +324,13 @@ main .receipe figure::before {
   width: 100%;
   height: 100%;
 }
-main .receipe figure img {
+main .recipe figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .receipe figure h1 {
+main .recipe figure h1 {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -348,25 +348,25 @@ main .receipe figure h1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main .receipe figure .like-area {
+main .recipe figure .like-area {
   display: flex;
   justify-content: end;
   align-items: center;
   padding: 20px;
 }
-main .receipe figure .like-area i {
+main .recipe figure .like-area i {
   font-size: 25px;
   padding: 5px;
   border-radius: 10px;
   color: #a73d01;
   transition: all 0.3s;
 }
-main .receipe figure .like-area i:hover {
+main .recipe figure .like-area i:hover {
   background-color: #a73d01;
   cursor: pointer;
   color: #fff;
 }
-main .receipe .ingredients {
+main .recipe .ingredients {
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -375,36 +375,36 @@ main .receipe .ingredients {
   width: 100%;
 }
 @media (max-width: 1000px) {
-  main .receipe .ingredients {
+  main .recipe .ingredients {
     align-items: center;
     padding: 20px;
   }
 }
-main .receipe .ingredients ul {
+main .recipe .ingredients ul {
   display: grid;
   list-style: none;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 @media (max-width: 550px) {
-  main .receipe .ingredients ul {
+  main .recipe .ingredients ul {
     grid-template-columns: 1fr;
   }
 }
-main .receipe .ingredients ul li {
+main .recipe .ingredients ul li {
   display: flex;
   gap: 10px;
 }
-main .receipe .ingredients ul li i {
+main .recipe .ingredients ul li i {
   color: #a73d01;
 }
-main .receipe .ingredients ul li p {
+main .recipe .ingredients ul li p {
   white-space: nowrap;
   max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main .receipe .ingredients button {
+main .recipe .ingredients button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -418,19 +418,19 @@ main .receipe .ingredients button {
   transition: all 0.3s;
   cursor: pointer;
 }
-main .receipe .ingredients button:hover {
+main .recipe .ingredients button:hover {
   scale: 0.97;
 }
-main .receipe .ingredients button span {
+main .recipe .ingredients button span {
   font-family: "Edu SA Beginner" cursive;
   font-weight: 900;
   letter-spacing: 2px;
 }
-main .receipe .directions {
+main .recipe .directions {
   text-align: center;
   padding-bottom: 40px;
 }
-main .receipe .directions h2 {
+main .recipe .directions h2 {
   transform: scaleY(-3deg);
   font-weight: 600;
   color: #a73d01;
@@ -439,21 +439,21 @@ main .receipe .directions h2 {
   font-size: 27px;
   text-shadow: 0 0 10px #f76b1c;
 }
-main .receipe .directions p {
+main .recipe .directions p {
   padding: 50px;
   font-weight: 400;
 }
-main .receipe .directions p span {
+main .recipe .directions p span {
   color: #cb4a00;
 }
-main .receipe .directions a {
+main .recipe .directions a {
   border: 1px solid #f76b1c;
   padding: 10px 30px;
   border-radius: 30px;
   font-weight: 600;
   transition: all 0.3s;
 }
-main .receipe .directions a:hover {
+main .recipe .directions a:hover {
   background-color: #f76b1c;
 }
 main .shopping h2 {
@@ -491,4 +491,15 @@ main .shopping ul li {
 main .shopping ul li i {
   cursor: pointer;
   font-size: 20px;
+}
+
+.loader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 80px 0;
+}
+
+#like-btn:hover {
+  color: #cb4a00;
 }/*# sourceMappingURL=style.css.map */
